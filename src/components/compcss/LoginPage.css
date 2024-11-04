@@ -1,0 +1,100 @@
+/* src/compcss/LoginPage.css */
+
+.login-page * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #d9e8f5);
+  color: #333;
+}
+
+.login-page .login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .animation-wrapper {
+  width: 50%;
+}
+
+.login-page .form-wrapper {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-page .form-wrapper h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.login-page .form-wrapper form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-page .form-wrapper input {
+  width: 80%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-page .form-wrapper input:focus {
+  border-color: #007bff;
+}
+
+.login-page .form-wrapper button {
+  width: 80%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-page .form-wrapper button:hover {
+  background-color: #0056b3;
+}
+
+.login-page .sign-up-link {
+  margin-top: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.login-page .sign-up-link a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-page .sign-up-link a:hover {
+  color: #0056b3;
+}

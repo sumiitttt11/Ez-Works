@@ -1,0 +1,61 @@
+/* HeroSection.css */
+
+/* Initial states */
+.hero-container {
+  transition: background-color 0.5s ease;
+}
+
+.hero-container h2, .hero-container p, .hero-container button {
+  transition: opacity 3s ease, transform 3s ease;
+}
+
+.hero-container .translate-y-0 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hero-container .translate-y-10 {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+/* Button hover effect */
+.hero-container button:hover {
+  transform: scale(1.05);
+}
+/* HowItWorks.css */
+
+/* General Styles */
+.how-it-works {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.step-card {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Styles */
+.how-it-works.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.step-card.dark-card {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.text-blue-400 {
+  color: #60a5fa; /* Light blue */
+}
+
+.text-blue-600 {
+  color: #2563eb; /* Dark blue */
+}

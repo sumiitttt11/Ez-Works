@@ -1,0 +1,57 @@
+/* Navbar - Static Background */
+.navbar {
+    background-color: inherit;
+  }
+  
+  /* Hamburger Animation */
+  .hamburger-line {
+    width: 25px;
+    height: 2px;
+    background: currentColor;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+  }
+  .hamburger.open .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.open .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Search Input Reveal */
+  .search-wrapper {
+    max-width: 40px;
+    overflow: hidden;
+    transition: max-width 0.4s ease;
+  }
+  .search-wrapper:focus-within {
+    max-width: 200px;
+  }
+  .search-input {
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  .search-input:focus {
+    width: 100%;
+  }
+  
+  /* 3D Hover Effect */
+  .menu-item:hover {
+    color: #1b9a65;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    transform: translateZ(10px) scale(1.05);
+  }
+  
+  /* Staggered Mobile Menu Item Fade-In */
+  .mobile-menu .menu-item {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

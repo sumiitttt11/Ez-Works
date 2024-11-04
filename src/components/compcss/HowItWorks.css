@@ -1,0 +1,85 @@
+.how-it-works {
+  padding: 40px;
+  background-color: #f9f9f9; /* Light background */
+  text-align: center;
+}
+
+.how-it-works.dark {
+  background-color: #1a1a1a; /* Dark background for dark mode */
+  color: #ffffff; /* Light text color for readability */
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background-color: rgba(255, 248, 248, 0.555); /* Light card background */
+  border: 1px solid #e1e1e1;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.step-card.dark-card {
+  background-color: #2a2a2a; /* Dark card background */
+  border: 1px solid #444; /* Darker border for dark mode */
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+h2.dark {
+  color: #ffffff; /* Light color for heading in dark mode */
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+h3.dark {
+  color: #90e0ff; /* Lighter color for heading in dark mode */
+}
+
+p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+p.dark {
+  color: #fdfdfd; /* Light text color for paragraphs in dark mode */
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+  .steps-container {
+    flex-direction: row; /* Change to row layout on larger screens */
+    justify-content: space-between; /* Space out items evenly */
+  }
+  
+  .step-card {
+    flex: 1; /* Make cards flexible */
+    margin: 0 10px; /* Add margin for spacing */
+  }
+}

@@ -1,0 +1,50 @@
+/* Center the Services Section */
+.bg-white.dark\:bg-gray-800 {
+    padding: 3rem 1rem;
+  }
+  
+  /* Title Styling */
+  .text-blue-600.dark\:text-blue-400 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Service Card Styling */
+  .service-card {
+    max-width: 20rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Service Card Dark Mode */
+  .dark .service-card {
+    background-color: #374151;
+    color: #d1d5db;
+    border-color: #4b5563;
+  }
+  
+  /* Hover Effect */
+  .service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Applying the Animation */
+  .fade-in {
+    animation: fadeInScale 0.5s ease forwards;
+  }
+  
